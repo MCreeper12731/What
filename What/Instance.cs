@@ -8,8 +8,10 @@ namespace What
 {
     internal abstract class Instance
     {
-        public char symbol;
-        public abstract String onHit();
-        public abstract String onTurn();
+        public char symbolRight;
+        public char symbolLeft;
+        public ConsoleColor color = ConsoleColor.Gray;
+        public abstract string onHit();
+        public abstract string onTurn();
     }
 }
